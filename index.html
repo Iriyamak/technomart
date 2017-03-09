@@ -7,26 +7,29 @@
     <title>Техномарт</title>
   </head>
   <body>
-    <header class="main-header">
+    <header>
       <div class="header-top">
           <div class="centerfix">
             <a href="index.html" class="logo">ТЕХНОМАРТ</a>
             <div class="search-block">
-              <form action="">
-                <input type="search" name="" placeholder="Что ищем?">
+              <form action="#" method="post">
+                <span>Поиск:&nbsp;</span>
+                <input type="search" name="search" placeholder="Что ищем?">
               </form>
             </div>
             <div class="cart-block">
-              <a href="#" class="bookmark">Закладки:</a>
-              <a href="#" class="cart">Корзина:</a>
-              <a href="#" class="">Оформить заказ</a>
+              <a href="#" class="bookmark">Закладки:&nbsp;<span>0</span></a>
+              <a href="#" class="cart">Корзина:&nbsp;<span>0</span></a>
+              <a href="#" class="order">Оформить заказ</a>
             </div>
           </div>
       </div>
       <div class="header-bottom">
           <div class="centerfix">
             <div class="header-center">
-              <p class="slogan">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+              <p class="slogan">Интернет-магазин <br>
+                строительных материалов <br>
+                и инструментов для ремонта</p>
               <div class="header-contacts">
                 <p class="header-contact-sphone">+7 (812) 555-05-55</p>
                 <p class="header-contacts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -55,45 +58,59 @@
     </header>
     <main>
       <div class="features centerfix">
-        <div class="slider">
-          <ul>
-            <li>
-              <img src="img/slider-1.png" alt="">
-              <h2>Перфораторы</h2>
-              <p>Настроящие мужские игрушки</p>
-              <button class="btn">ОТКРЫТЬ КАТАЛОГ</button></li>
-            <li>
-              <img src="img/slider-2.png" alt="">
-              <h2>Дрели</h2>
-              <p>Соседям на радость!</p>
-              <button class="btn">ОТКРЫТЬ КАТАЛОГ</button></li>
-          </ul>
+        <div class="feature_left">
+          <div class="feature-item">
+            <div class="feature-item-description">
+              <h3>Материалы</h3>
+              <button type="button" class="btn">на любой вкус</button>
+            </div>
+            <img src="img/features-1.png" alt="" class="feature-icon">
+            <img src="img/new.png" alt="new" class="icon-new">
+          </div>
+          <div class="feature-item">
+            <div class="feature-item-description">
+              <h3>Инструмент</h3>
+              <button type="button" class="btn">НА ВСЕ СЛУЧАИ</button>
+            </div>
+            <img src="img/features-2.png" alt="" class="feature-icon">
+          </div>
+          <div class="feature-item slider">
+            <ul>
+              <li>
+                <img src="img/slider-1.jpg" alt="">
+                <h2>Перфораторы</h2>
+                <p>Настроящие мужские игрушки</p>
+                <button type="button" class="btn">ОТКРЫТЬ КАТАЛОГ</button></li>
+              <li>
+                <img src="img/slider-2.jpg" alt="">
+                <h2>Дрели</h2>
+                <p>Соседям на радость!</p>
+                <button type="button" class="btn">ОТКРЫТЬ КАТАЛОГ</button></li>
+            </ul>
+          </div>
         </div>
-        <div class="feature-item">
-          <img src="img/features-1.png" alt="" class="feature-icon">
-          <img src="img/new.png" alt="" class="icon-new">
-          <h3>Материалы</h3>
-          <button type="button" class="btn">на любой вкус</button>
-        </div>
-        <div class="feature-item">
-          <img src="img/features-2.png" alt="" class="feature-icon">
-          <h3>Инструмент</h3>
-          <button type="button" class="btn">НА ВСЕ СЛУЧАИ</button>
-        </div>
-        <div class="feature-item">
-          <img src="img/features-3.png" alt="" class="feature-icon">
-          <h3>Техника</h3>
-          <button type="button" class="btn">для стройки</button>
-        </div>
-        <div class="feature-item">
-          <img src="img/features-4.png" alt="" class="feature-icon">
-          <h3>Скидки 50%</h3>
-          <button type="button" class="btn">На 350 ТОВАРОВ</button>
-        </div>
-        <div class="feature-item">
-          <img src="img/features-5.png" alt="" class="feature-icon">
-          <h3>Доставка</h3>
-          <button type="button" class="btn">бесплатно</button>
+        <div class="feature_right">
+          <div class="feature-item">
+            <div class="feature-item-description">
+              <h3>Техника</h3>
+              <button type="button" class="btn">для стройки</button>
+            </div>
+            <img src="img/features-3.png" alt="" class="feature-icon">
+          </div>
+          <div class="feature-item">
+            <div class="feature-item-description">
+              <h3>Скидки 50%</h3>
+              <button type="button" class="btn">На 350 ТОВАРОВ</button>
+            </div>
+            <img src="img/features-4.png" alt="" class="feature-icon">
+          </div>
+          <div class="feature-item">
+            <div class="feature-item-description">
+              <h3>Доставка</h3>
+              <button type="button" class="btn">бесплатно</button>
+            </div>
+            <img src="img/features-5.png" alt="" class="feature-icon">
+          </div>
         </div>
       </div>
       <section class="popular centerfix">
@@ -101,60 +118,64 @@
           <h2>Популярные товары:</h2>
           <a href="#" class="btn">все поПулярные товары</a>
         </header>
-        <article class="catalog-item">
-          <img src="img/item-9000.jpg" alt="">
-          <div class="hidden">
-            <button class="btn">КУПИТЬ</button>
-            <button class="btn">В закладки</button>
-          </div>
-          <h3><a href="#">Перфоратор BOSCH BFG 9000</a></h3>
-          <p class="old-price">32500 Р.</p>
-          <p class="price">25500 Р.</p>
-        </article>
-        <article class="catalog-item">
-          <img src="img/item-3000.jpg" alt="">
-          <div class="hidden">
-            <button class="btn">КУПИТЬ</button>
-            <button class="btn">В закладки</button>
-          </div>
-          <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
-          <p class="old-price">22500 Р.</p>
-          <p class="price">15500 Р.</p>
-        </article>
-        <article class="catalog-item">
-          <img src="img/item-6000.jpg" alt="">
-          <div class="hidden">
-            <button class="btn">КУПИТЬ</button>
-            <button class="btn">В закладки</button>
-          </div>
-          <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
-          <p class="old-price">30500 Р.</p>
-          <p class="price">25500 Р.</p>
-        </article>
-        <article class="catalog-item">
-          <img src="img/item-2000.jpg" alt="">
-          <div class="hidden">
-            <button class="btn">КУПИТЬ</button>
-            <button class="btn">В закладки</button>
-          </div>
-          <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
-          <p class="old-price"></p>
-          <p class="price">12500 Р.</p>
-        </article>
+        <section class="catalog">
+          <article class="catalog-item">
+            <img src="img/item-9000.jpg" alt="">
+            <div class="hidden">
+              <button type="button" class="btn">КУПИТЬ</button>
+              <button type="button" class="btn">В закладки</button>
+            </div>
+            <h3><a href="#">Перфоратор BOSCH BFG 9000</a></h3>
+            <p class="old-price">32500 Р.</p>
+            <p class="price">25500 Р.</p>
+          </article>
+          <article class="catalog-item">
+            <img src="img/item-3000.jpg" alt="">
+            <div class="hidden">
+              <button type="button" class="btn">КУПИТЬ</button>
+              <button type="button" class="btn">В закладки</button>
+            </div>
+            <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+            <p class="old-price">22500 Р.</p>
+            <p class="price">15500 Р.</p>
+          </article>
+          <article class="catalog-item">
+            <img src="img/item-6000.jpg" alt="">
+            <div class="hidden">
+              <button type="button" class="btn">КУПИТЬ</button>
+              <button type="button" class="btn">В закладки</button>
+            </div>
+            <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+            <p class="old-price">30500 Р.</p>
+            <p class="price">25500 Р.</p>
+          </article>
+          <article class="catalog-item">
+            <img src="img/item-2000.jpg" alt="">
+            <div class="hidden">
+              <button type="button" class="btn">КУПИТЬ</button>
+              <button type="button" class="btn">В закладки</button>
+            </div>
+            <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+            <p class="old-price"></p>
+            <p class="price">12500 Р.</p>
+          </article>
+        </section>
       </section>
-      <section class="brands-list centerfix">
+      <section class="popular centerfix">
         <header>
           <h2>Популярные ПРОИзводители:</h2>
           <a href="#" class="btn">все производители</a>
         </header>
-        <div class="brands-item"><img src="img/logo-bosh.jpg" alt=""></div>
-        <div class="brands-item"><img src="img/logo-makita.jpg" alt=""></div>
-        <div class="brands-item"><img src="img/logo-dewalt.jpg" alt=""></div>
-        <div class="brands-item"><img src="img/logo-interscol.jpg" alt=""></div>
-        <div class="brands-item"><img src="img/logo-hitachi.jpg" alt=""></div>
-        <div class="brands-item"><img src="img/logo-lg.jpg" alt=""></div>
-        <div class="brands-item"><img src="img/logo-aeg.jpg" alt=""></div>
-        <div class="brands-item"><img src="img/logo-metabo.jpg" alt=""></div>
+        <section class="catalog">
+          <div class="catalog-item"><img src="img/logo-bosh.jpg" alt=""></div>
+          <div class="catalog-item"><img src="img/logo-makita.jpg" alt=""></div>
+          <div class="catalog-item"><img src="img/logo-dewalt.jpg" alt=""></div>
+          <div class="catalog-item"><img src="img/logo-interscol.jpg" alt=""></div>
+          <div class="catalog-item"><img src="img/logo-hitachi.jpg" alt=""></div>
+          <div class="catalog-item"><img src="img/logo-lg.jpg" alt=""></div>
+          <div class="catalog-item"><img src="img/logo-aeg.jpg" alt=""></div>
+          <div class="catalog-item"><img src="img/logo-metabo.jpg" alt=""></div>
+        </section>
       </section>
       <div class="service">
         <div class="centerfix">

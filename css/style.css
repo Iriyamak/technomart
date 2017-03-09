@@ -77,23 +77,96 @@ html {
 		max-width:100%;
 	}
 	.centerfix{
-		max-width: 1170px;
+		max-width: 940px;
 		margin: 0 auto;
 	}
 /* --------------- базовые настройки ---------*/
-h1{
-	font-size: 40px;
+.header-top{
+	background-color: #293449;
 }
-h2 {
-	font-size: 36px;
-	line-height: 36px;
+	.header-top .centerfix{
+		display: flex;
+		justify-content: space-between;
+	}
+		.header-top a,
+		.header-top span{
+			color:#fff;
+		}
+	.logo{
+		background-color: #ee3643;
+	}
+	.order{
+		background-color: #63a63e;
+	}
+.header-bottom{
+	background-color: #f1f5f7;
 }
-p{
-	font-size: 16px;
-	line-height: 22px;
-	color:#283136;
+	.header-center{
+		display: flex;
+		justify-content: space-between;
+	}
+	.main-menu ul{
+		display: flex;
+		justify-content: space-between;
+		background-color: #32425c;
+
+	}
+		.main-menu a{
+			color:#fff;
+		}
+.features{
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
 }
-b {
-	font-size: 18px;
-	line-height: 30px;
+	.feature_left{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 60%;
+	}
+	.feature_right{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.feature_left .feature-item,
+	.feature_right .feature-item{
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+	}
+		.feature_left .feature-item:nth-child(1){
+			background-color: #f6b22d;
+		}
+		.feature_left .feature-item:nth-child(2){
+			background-color: #4aafde;
+		}
+		.feature_right .feature-item:nth-child(1){
+			background-color: #cc79d1;
+		}
+		.feature_right .feature-item:nth-child(2){
+			background-color: #85d179;
+		}
+		.feature_right .feature-item:nth-child(3){
+			background-color: #f6b22d;
+		}
+
+
+	.icon-new{
+		position: absolute;
+	}
+.popular header{
+	background-color: #f7f3ec;
+	display: flex;
+	justify-content: space-between;
 }
+	.catalog{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+		.catalog-item{
+			width: 24%;
+			border: 1px solid #e5e5e5;
+		}
