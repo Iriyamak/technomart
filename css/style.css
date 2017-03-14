@@ -109,7 +109,6 @@ html {
 		display: flex;
 		justify-content: space-between;
 		background-color: #32425c;
-
 	}
 		.main-menu a{
 			color:#fff;
@@ -151,8 +150,6 @@ html {
 		.feature_right .feature-item:nth-child(3){
 			background-color: #f6b22d;
 		}
-
-
 	.icon-new{
 		position: absolute;
 	}
@@ -170,3 +167,45 @@ html {
 			width: 24%;
 			border: 1px solid #e5e5e5;
 		}
+.service-tabs{
+	display: flex;
+	justify-content: space-between;
+}
+	.service-right{
+		display: flex;
+		justify-content: space-between;
+	}
+.about{
+	display: flex;
+	justify-content: space-between;
+}
+.footer-top{
+	background-color: #32425c;
+}
+	.footer-top-first{
+		display: flex;
+		justify-content: space-between;
+	}
+		.footer-top-first ul{
+			display: flex;
+			justify-content: flex-end;
+		}
+	.footer-center{
+		display: flex;
+		justify-content: space-between;
+	}
+		.footer-center ul{
+			display: flex;
+			justify-content: flex-end;
+		}
+.footer-bottom{
+	background-color: #293449;
+}
+	.footer-bottom .centerfix{
+		display: flex;
+		justify-content: space-between;
+	}
+	.footer-copyright{
+		display: flex;
+		
+	}
